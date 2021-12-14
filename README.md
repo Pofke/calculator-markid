@@ -1,5 +1,23 @@
 # calculator-markid
 
+# Requirements
+
+1. PHP 8.0.2 or higher
+```
+https://www.php.net/downloads.php
+```
+
+2. Composer
+```
+https://getcomposer.org/download/
+```
+
+2. Symfony
+```
+https://symfony.com/download
+```
+
+
 # Project installation
 1. Clone repository
 ```
