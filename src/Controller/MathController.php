@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MathController extends AbstractController {
     /**
-    * @Route("/math/{argument1}/{operation<add|sub|div|mul>}/{argument2}", name="app_math", methods="POST")
+    * @Route("/math/{argument1<\d+>}/{operation<add|sub|div|mul>}/{argument2<\d+>}", name="app_math", methods="POST")
      */
     public function doMath($argument1, $operation, $argument2, LoggerInterface $logger)
     {

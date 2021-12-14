@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+<div class="container main-container bg-secondary">
+    <form>
+        <div class="row justify-content-end">
+    
+            <div class="col-sm-2"><input type="number" id="argument1" name="argument1" class="calculator" title="1st argument"></div>
+            <div class="col-sm-2">
+                <select title="aritmetic operation" name="aritmetic_operation" class="calculator" id="aritmetic_operation">
+                    <option value="add">&#128125;</option>
+                    <option value="sub">&#128128;</option>
+                    <option value="mul">&#128123;</option>
+                    <option value="div">&#128561;</option>
+                </select>
+            </div>
+            <div class="col-sm-2"><input type="number" id="argument2" name="argument2" class="calculator" title="2nd argument"></div>
+    
+        </div>
+    </form>
+  
+
+  <div class="row justify-content-end answer-row">
+    
+    <div class="col-sm align-items-end"><div id="answer"></div></div>
+  </div>
+</div>
+
+
+<!--
+<div class="container-sm main-container bg-secondary">
+  <div class="row">
+    <div class="col-sm-12">
+        <div class="col-sm-4">
+    <input type="number" id="argument1" name="argument1" class="calculator" title="1st argument">
+        </div>
+        <div class="col-sm-4">
+     <select title="aritmetic operation" name="aritmetic_operation" class="calculator" id="aritmetic_operation">
+                <option value="add">&#128125;</option>
+                <option value="sub">&#128128;</option>
+                <option value="mul">&#128123;</option>
+                <option value="div">&#128561;</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+    <input type="number" id="argument2" name="argument2" class="calculator" title="2nd argument">
+        </div>
+
+
+    </div>
+
+  </div>
+  <form>
+        <input type="number" id="argument1" name="argument1" class="calculator" title="1st argument">
+            <select title="aritmetic operation" name="aritmetic_operation" class="calculator" id="aritmetic_operation">
+                <option value="add">&#128125;</option>
+                <option value="sub">&#128128;</option>
+                <option value="mul">&#128123;</option>
+                <option value="div">&#128561;</option>
+            </select>
+        <input type="number" id="argument2" name="argument2" class="calculator" title="2nd argument">
+        
+    </form>
+
+
+</div>
+
+
+<div class="center">
+    <div class="calculator_div bg-secondary">
+        <form>
+            <input type="number" id="argument1" name="argument1" class="calculator" title="1st argument">
+                <select title="aritmetic operation" name="aritmetic_operation" class="calculator" id="aritmetic_operation">
+                    <option value="add">&#128125;</option>
+                    <option value="sub">&#128128;</option>
+                    <option value="mul">&#128123;</option>
+                    <option value="div">&#128561;</option>
+                </select>
+            <input type="number" id="argument2" name="argument2" class="calculator" title="2nd argument">
+            
+        </form>
+        <div id="answer"></div>
+    </div>
+</div>
+-->
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/math_count.js') }}"></script>
+{% endblock %}
+
